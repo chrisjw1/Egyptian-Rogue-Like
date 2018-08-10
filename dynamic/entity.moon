@@ -8,5 +8,11 @@ class Entity
   char_repr: () =>
     return @char
 
+  move: (dx,dy) =>
+    @position.x += dx
+    @position.y += dy
+
+  update: (dt) =>
+    
 
 return Entity

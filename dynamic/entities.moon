@@ -4,7 +4,6 @@ Entity = require 'entity'
 class Entities
   new: () =>
     @raw_entities = {}
-    @add(Entity())
 
   add: (entity) =>
     insert(@raw_entities,entity)
@@ -21,5 +20,9 @@ class Entities
       return entity\char_repr()
     else
       return 'x'
+
+  update: (dt) =>
+    for entity in *@raw_entities
+      entity\update(dt)
 
 return Entities

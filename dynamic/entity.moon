@@ -13,6 +13,7 @@ class Entity
     @position.y += dy
 
   update: (dt) =>
-    
+
+
 
 return Entity

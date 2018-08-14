@@ -1,5 +1,6 @@
 Entities = require 'entities'
 Player = require 'player'
+CollisionSimulation = require 'collision_simulation'
 
 class GameWorld
   new: () =>
@@ -8,6 +9,7 @@ class GameWorld
     @entities = Entities()
     @player = Player()
     @entities\add(@player)
+    @collision_simulation = CollisionSimulation()
 
   string_representation: () =>
     ret = ''

@@ -21,4 +21,6 @@ class RegenAttribute
   update: (dt) =>
     @change(dt * @regen)
 
+
+
 return RegenAttribute

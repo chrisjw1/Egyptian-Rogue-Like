@@ -4,7 +4,7 @@ RegenAttribute = require 'regen_attribute'
 class Player extends Entity
   new: () =>
     super()
-    @energy = RegenAttribute(100,20)
+    @energy = RegenAttribute(100,40)
 
   update: (dt) =>
     super()
